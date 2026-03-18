@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Print a message
+        run: echo "Pipeline is running on branch ${{ github.ref }}"
+      - name: Show the commit
+        run: git log --oneline -5
