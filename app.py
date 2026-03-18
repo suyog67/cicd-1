@@ -22,3 +22,4 @@ def subtract_letter(word):
 # Example
 word = input("Enter a word: ")
 print("After subtraction:", subtract_letter(word))
+print("done my sanSui")
